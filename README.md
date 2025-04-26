@@ -1,18 +1,16 @@
 ﻿# HumanChainAi
 ⚙️ Setup Instructions
-1. Clone the repo
+##1. Clone the repo
 
-git clone https://github.com/yourusername/incident-management-api.git,
-cd incident-management-api
-2. Install dependencies
+git clone https://github.com/yourusername/incident-management-api.git .
+cd incident-management-api .
+##2. Install dependencies
 
-npm install
-3. Create a .env file
+npm install .
+##3. Create a .env file
 
 touch .env
 Inside .env, add:
-
-
 MONGO_URI=your_mongodb_connection_string
 PORT=8080
 Example MongoDB URI:
@@ -38,7 +36,7 @@ json format
 2. List All Incidents
 GET /incidents
 
-3. Get Specific Incident by ID
+##3. Get Specific Incident by ID
 GET /incidents/:id
 
 Example: /incidents/1
