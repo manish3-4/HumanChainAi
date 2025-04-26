@@ -1,58 +1,21 @@
-﻿# HumanChainAi
-⚙️ Setup Instructions
-##1. Clone the repo
+# HumanChain_AI - Incident Management API
 
-git clone https://github.com/yourusername/incident-management-api.git .
-cd incident-management-api .
-##2. Install dependencies
+![Incident Management Screenshot](screen.png)
 
-npm install .
-##3. Create a .env file
+# HumanChain_AI
+HumanChain_AI is a lightweight **Incident Management** REST API built with **Node.js**, **Express**, **MongoDB**, and **TypeScript**.  
+It allows administrators to create, view, retrieve, and delete incidents easily through API endpoints.
 
-touch .env
-Inside .env, add:
-MONGO_URI=your_mongodb_connection_string
-PORT=8080
-Example MongoDB URI:
+The API helps to track system incidents efficiently—whether it's a server crash, downtime, or other emergencies.  
+Each incident is stored with details like title, description, severity, and report time.
 
-"mongodb://localhost:27017/incidentsdb"
+Your task is simple: manage all system incidents in one place using this API!
 
-4. Run the server
+---
 
-npm run dev
-(assuming you're using nodemon, otherwise use npm start)
+## ⚙️ Setup Instructions
 
-📡 API Endpoints
-1. Create a New Incident
-POST /incidents
-
-json format
-
-{
-  "title": "Server Outage",
-  "description": "The main server is down.",
-  "severity": "High"
-}
-2. List All Incidents
-GET /incidents
-
-##3. Get Specific Incident by ID
-GET /incidents/:id
-
-Example: /incidents/1
-
-4. Delete an Incident
-DELETE /incidents/:id
-
-Example: /incidents/1
-
-🔥 Example Response
-json
-
-{
-  "id": 1,
-  "title": "Server Outage",
-  "description": "The main server is down.",
-  "severity": "High",
-  "reported_at": "2025-04-25T13:40:00.000Z"
-}
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/incident-management-api.git
+cd incident-management-api
