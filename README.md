@@ -2,7 +2,7 @@
 ⚙️ Setup Instructions
 1. Clone the repo
 
-git clone https://github.com/yourusername/incident-management-api.git
+git clone https://github.com/yourusername/incident-management-api.git,
 cd incident-management-api
 2. Install dependencies
 
